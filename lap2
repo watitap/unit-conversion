@@ -8,25 +8,25 @@ print(str(miles_to_kilometers) + " miles is equal to " + str(kilometers) + " kil
 
 fahrenheit_to_celsius = float(input(name + ", please tell me how many fahrenheit you want converted to celsius: "))
 celsius = (fahrenheit_to_celsius - 32) * 5 / 9
-print(str(fahrenheit_to_celsius) + "fahrenheit is equal to " + str(celsius) + " celsius\n")
+print(str(fahrenheit_to_celsius) + " fahrenheit is equal to " + str(celsius) + " celsius\n")
 
 
 # conversion from Gallons to Liters
 
 gallons_to_liters = float(input(name + ", please tell me how many gallons you want converted to liters: "))
 liters = gallons_to_liters * 3.9
-print(str(gallons_to_liters) + "gallons is equal to " + str(liters) + " liters\n")
+print(str(gallons_to_liters) + " gallons is equal to " + str(liters) + " liters\n")
 
 
 # conversion from Pounds to Kilograms
 
 pounds_to_kilograms = float(input(name + ", please tell me how many pounds you want converted to kilograms: "))
 kilograms = pounds_to_kilograms * 0.45
-print(str(pounds_to_kilograms) + "pounds is equal to " + str(kilograms) + " kilograms\n")
+print(str(pounds_to_kilograms) + " pounds is equal to " + str(kilograms) + " kilograms\n")
 
 
 # conversion from Inches to Centimeters
 
 inches_to_centimeters = float(input(name + ", please tell me how many inches you want converted to centimeters: "))
 centimeters = inches_to_centimeters * 2.54
-print(str(inches_to_centimeters) + "inches is equal to " + str(centimeters) + " centimeters\n")
+print(str(inches_to_centimeters) + " inches is equal to " + str(centimeters) + " centimeters\n")
