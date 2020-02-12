@@ -1,32 +1,33 @@
-name = input("What is your name? ")
-miles_to_kilometers = float(input(name + ", please tell me how many miles you want converted to kilometers: "))
+# conversion from Miles to Kilometers
+
+miles_to_kilometers = float(input("Please tell me how many miles you want converted to kilometers: "))
 kilometers = miles_to_kilometers * 1.6
-print(str(miles_to_kilometers) + " miles is equal to " + str(kilometers) + " kilometers\n")
+print("Watita, " + str(miles_to_kilometers) + " miles is equal to " + str(round(kilometers, 2)) + " kilometers, Isn’t that amazing! \n")
 
 
 # conversion from Fahrenheit to Celsius
 
-fahrenheit_to_celsius = float(input(name + ", please tell me how many fahrenheit you want converted to celsius: "))
+fahrenheit_to_celsius = float(input("Please tell me how many fahrenheit you want converted to celsius: "))
 celsius = (fahrenheit_to_celsius - 32) * 5 / 9
-print(str(fahrenheit_to_celsius) + " fahrenheit is equal to " + str(celsius) + " celsius\n")
+print("Watita, " + str(fahrenheit_to_celsius) + " fahrenheit is equal to " + str(round(celsius, 2)) + " celsius, Isn’t that awesome! \n")
 
 
 # conversion from Gallons to Liters
 
-gallons_to_liters = float(input(name + ", please tell me how many gallons you want converted to liters: "))
+gallons_to_liters = float(input("Please tell me how many gallons you want converted to liters: "))
 liters = gallons_to_liters * 3.9
-print(str(gallons_to_liters) + " gallons is equal to " + str(liters) + " liters\n")
+print("Watita, " + str(gallons_to_liters) + " gallons is equal to " + str(round(liters, 2)) + " liters, Isn’t that cool! \n")
 
 
 # conversion from Pounds to Kilograms
 
-pounds_to_kilograms = float(input(name + ", please tell me how many pounds you want converted to kilograms: "))
+pounds_to_kilograms = float(input("Please tell me how many pounds you want converted to kilograms: "))
 kilograms = pounds_to_kilograms * 0.45
-print(str(pounds_to_kilograms) + " pounds is equal to " + str(kilograms) + " kilograms\n")
+print("Watita, " + str(pounds_to_kilograms) + " pounds is equal to " + str(round(kilograms, 2)) + " kilograms, Isn’t that fantastic! \n")
 
 
 # conversion from Inches to Centimeters
 
-inches_to_centimeters = float(input(name + ", please tell me how many inches you want converted to centimeters: "))
+inches_to_centimeters = float(input("Please tell me how many inches you want converted to centimeters: "))
 centimeters = inches_to_centimeters * 2.54
-print(str(inches_to_centimeters) + " inches is equal to " + str(centimeters) + " centimeters\n")
+print("Watita, " + str(inches_to_centimeters) + " inches is equal to " + str(round(centimeters,2)) + " centimeters, Isn’t that wonderful! \n")
