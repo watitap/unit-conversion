@@ -1,0 +1,33 @@
+# conversion from Miles to Kilometers
+
+miles_to_kilometers = float(input("Please tell me how many miles you want converted to kilometers: "))
+kilometers = miles_to_kilometers * 1.6
+print("Watita, ", miles_to_kilometers, " miles is equal to ", round(kilometers, 2), " kilometers, Isn’t that amazing! \n")
+
+
+# conversion from Fahrenheit to Celsius
+
+fahrenheit_to_celsius = float(input("Please tell me how many fahrenheit you want converted to celsius: "))
+celsius = (fahrenheit_to_celsius - 32) * 5 / 9
+print("Watita, ", fahrenheit_to_celsius, " fahrenheit is equal to ", round(celsius, 2), " celsius, Isn’t that awesome! \n")
+
+
+# conversion from Gallons to Liters
+
+gallons_to_liters = float(input("Please tell me how many gallons you want converted to liters: "))
+liters = gallons_to_liters * 3.9
+print("Watita, ", gallons_to_liters, " gallons is equal to ", round(liters, 2), " liters, Isn’t that cool! \n")
+
+
+# conversion from Pounds to Kilograms
+
+pounds_to_kilograms = float(input("Please tell me how many pounds you want converted to kilograms: "))
+kilograms = pounds_to_kilograms * 0.45
+print("Watita, ", pounds_to_kilograms, " pounds is equal to ", round(kilograms, 2), " kilograms, Isn’t that fantastic! \n")
+
+
+# conversion from Inches to Centimeters
+
+inches_to_centimeters = float(input("Please tell me how many inches you want converted to centimeters: "))
+centimeters = inches_to_centimeters * 2.54
+print("Watita, ", inches_to_centimeters, " inches is equal to ", round(centimeters,2), " centimeters, Isn’t that wonderful! \n")
