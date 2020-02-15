@@ -1,0 +1,75 @@
+# conversion of miles to kilometers
+# if function to state that miles cannot be a negative number
+
+
+miles_to_kilometers = float(input("Please tell me how many miles you want converted to kilometers: "))
+kilometers = 1.6
+
+
+if miles_to_kilometers < 0:
+    print("You cannot enter a negative number, please enter again later. \n")
+else:
+   print("Watita, ", miles_to_kilometers, " miles is equal to ", round(miles_to_kilometers * kilometers, 2), " kilometers, Isn’t that amazing! \n")
+   
+
+
+# conversion of gallons to liters
+# if function to state that number of gallons cannot be a negative number
+
+
+gallons_to_liters = float(input("Please tell me how many gallons you want converted to liters: "))
+liters = 3.9
+
+
+if gallons_to_liters < 0:
+    print("You cannot enter a negative number, please enter again later. \n")
+else:
+   print("Watita, ", gallons_to_liters, " gallons is equal to ", round(gallons_to_liters * liters, 2), " liters, Isn’t that amazing! \n")
+   
+
+
+# conversion of pounds to kilograms
+# if function to state that number of pounds cannot be a negative number
+
+
+pounds_to_kilograms = float(input("Please tell me how many pounds you want converted to kilograms: "))
+kilograms = 0.45
+
+
+if pounds_to_kilograms < 0:
+    print("You cannot enter a negative number, please enter again later. \n")
+else:
+   print("Watita, ", pounds_to_kilograms, " pounds is equal to ", round(pounds_to_kilograms * kilograms, 2), " kilograms, Isn’t that amazing! \n")
+
+
+# conversion of inches to centimeters
+# if function to state that number of inches cannot be a negative number
+
+
+inches_centimeters = float(input("Please tell me how many inches you want converted to centimeters: "))
+centimeters = 2.54
+
+
+if inches_centimeters < 0:
+    print("You cannot enter a negative number, please enter again later. \n")
+else:
+   print("Watita, ", inches_centimeters, " inches is equal to ", round(inches_centimeters * centimeters, 2), " centimeters, Isn’t that amazing! \n")
+
+
+
+# conversion of fahrenheit to celsius
+# if function states that fahrenheit cannot be higher than 1000 degree
+
+
+fahrenheit_to_celsius = float(input("Please tell me how many fahrenheit you want converted to celsius: "))
+celsius = (fahrenheit_to_celsius - 32) * 5 / 9
+
+
+if fahrenheit_to_celsius > 1000:
+    print("You have entered an invalid number, please enter again later. \n")
+else:
+   print("Watita, ", fahrenheit_to_celsius, " fahrenheit is equal to ", round(celsius, 2), " celsius, Isn’t that amazing! \n")
+   
+
+   
+
