@@ -1,0 +1,53 @@
+# Get Inputs
+
+base_salary = 2000
+
+name = input('Please enter your name: ')
+monthsOfWork = int(input('How many months have you been working for the company: '))
+sales = float(input('Please enter your total sales: '))
+vacationDays = int(input('Please enter number of vacation days taken in a month: '))
+bonus = 0
+additionalBonus = 0
+deduction = 0
+
+# commission
+
+if sales < 10000:
+    commission = 0
+
+elif sales == 10000 or sales <= 100000:
+    commission = sales * .02
+    
+elif sales == 100001 or sales <= 500000:
+    commission = (sales * .15) 
+    if monthsOfWork > 3:
+        bonus = 1000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000    
+
+elif sales == 500001 or sales <= 1000000:
+    commission = (sales * .28)
+    if monthsOfWork > 3:
+        bonus = 5000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000
+        
+elif sales > 1000000:
+    commission = (sales * .35)
+    if monthsOfWork > 3:
+        bonus = 100000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000
+        
+if vacationDays > 3:
+    deduction = 200
+
+totalGrossPaycheck = base_salary + commission + bonus + additionalBonus - deduction
+
+
+print(totalGrossPaycheck)
+print(base_salary)
+print(commission)
+print(bonus)
+print(additionalBonus)
+print(deduction)
