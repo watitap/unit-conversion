@@ -1,0 +1,57 @@
+
+# Get Inputs
+
+base_salary = 2000
+
+name = input('Please enter your name: ')
+monthsOfWork = int(input('\n''How many months have you been working for the company: '))
+sales = float(input('\n''Please enter your total sales: '))
+vacationDays = int(input('\n''Please enter number of vacation days taken in a month: '))
+bonus = 0
+additionalBonus = 0
+deductions = 0
+
+# calculating commission, bonus, additional bonus and deductions
+
+if sales < 10000:
+    commission = 0
+
+elif sales == 10000 or sales <= 100000:
+    commission = sales * .02
+    
+elif sales == 100001 or sales <= 500000:
+    commission = (sales * .15) 
+    if monthsOfWork > 3:
+        bonus = 1000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000    
+
+elif sales == 500001 or sales <= 1000000:
+    commission = (sales * .28)
+    if monthsOfWork > 3:
+        bonus = 5000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000
+        
+elif sales > 1000000:
+    commission = (sales * .35)
+    if monthsOfWork > 3:
+        bonus = 100000
+    if monthsOfWork >= 60:
+        additionalBonus = 1000
+        
+if vacationDays > 3:
+    deductions = 200
+
+totalGrossPaycheck = base_salary + commission + bonus + additionalBonus - deductions
+
+# print result in the form of paystub
+print('\n-----------------------------------------------\n\n')
+print('Name: ', name)
+print('Number of months working in the company: ', monthsOfWork, '\n')
+print('Base Salary: \t\t\t $ %.2f' % base_salary)
+print('Commission earned: \t\t $ %.2f' % commission)
+print('Bonus earned: \t\t\t $ %.2f' % bonus)
+print('Additional bonus earned: \t $ %.2f' % additionalBonus)
+print('Deductions: \t\t\t $ %.2f' % deductions)
+print('Total Gross Paycheck: \t\t $ %.2f' % totalGrossPaycheck)
