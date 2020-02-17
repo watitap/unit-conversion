@@ -46,7 +46,7 @@ if vacationDays > 3:
 totalGrossPaycheck = base_salary + commission + bonus + additionalBonus - deductions
 
 # print result in the form of paystub
-print('\n-----------------------------------------------\n\n')
+print('\n---------------------------------------------------------\n\n')
 print('Name: ', name)
 print('Number of months working in the company: ', monthsOfWork, '\n')
 print('Base Salary: \t\t\t $ {:,.2f}'.format(base_salary))
